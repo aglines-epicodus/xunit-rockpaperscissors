@@ -26,19 +26,23 @@ namespace RockPaperScissors.Objects
 
     public void CompareInputs(string _inputP1, string _inputP2)
     {
+      // if (_inputP1 != "rock" || "paper" || "scissors" && _inputP2 != "rock" || "paper" || "scissors" )
+      // {
+      //   _output = "You must correctly spell rock, paper, or scissors!";
+      // }
       if (_inputP1 == _inputP2)
       {
         _output = "tie";
       }
-      else if (_inputP1 == "rock" && _inputP2 == "scissors")
+      else if ((_inputP1 == "rock") && (_inputP2 == "scissors"))
       {
         _output = "P1 Wins";
       }
-      else if (_inputP1 == "scissors" && _inputP2 == "paper")
+      else if ((_inputP1 == "scissors") && (_inputP2 == "paper"))
       {
         _output = "P1 Wins";
       }
-      else if (_inputP1 == "paper" && _inputP2 == "rock")
+      else if ((_inputP1 == "paper") && (_inputP2 == "rock"))
       {
         _output = "P1 Wins";
       }
